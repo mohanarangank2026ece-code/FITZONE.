@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITZONE – Body Fitness &amp; Wellness | Transform Your Fitness Journey</title>
+  <meta name="description" content="Build Healthy Habits. Stay Active. Live Better. FITZONE is a modern premium fitness and wellness platform offering customized workout programs, exercise libraries, balanced nutrition, and interactive progress tracking.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================
+       NAVIGATION BAR
+       ========================================================== -->
+  <nav class="navbar navbar-expand-lg fitzone-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrapper">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <div class="brand-text">FIT<span>ZONE</span></div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fitzoneNav" aria-controls="fitzoneNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="fitzoneNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+          <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
+          <li class="nav-item"><a class="nav-link" href="nutrition.html">Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="progress.html">Progress</a></li>
+          <li class="nav-item"><a class="nav-link" href="challenges.html">Challenges</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="workouts.html" class="btn btn-neon">
+            <i class="bi bi-fire"></i> Join Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================
+       HERO SECTION
+       ========================================================== -->
+  <section class="hero-wrapper">
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="mb-3">
+            <span class="badge-neon">
+              <i class="bi bi-activity"></i> BODY FITNESS &amp; WELLNESS
+            </span>
+          </div>
+          <h1 class="hero-title">
+            TRANSFORM YOUR <br><span class="text-neon">FITNESS JOURNEY</span>
+          </h1>
+          <p class="hero-subtitle">
+            Build Healthy Habits. Stay Active. Live Better. Experience world-class structured workout programs, science-backed nutrition, and real-time habit tracking engineered to unlock your absolute highest physical potential.
+          </p>
+
+          <div class="hero-cta-group d-flex flex-wrap gap-3">
+            <a href="workouts.html" class="btn btn-neon">
+              <i class="bi bi-play-circle-fill"></i> Get Started
+            </a>
+            <a href="workouts.html" class="btn btn-outline-neon">
+              <i class="bi bi-compass"></i> Explore Workouts
+            </a>
+            <a href="progress.html" class="btn btn-glass">
+              <i class="bi bi-bar-chart-fill text-neon"></i> Track Progress
+            </a>
+          </div>
+
+          <!-- Hero Quick Stats Bar -->
+          <div class="hero-stats">
+            <div class="row g-4">
+              <div class="col-6 col-md-3 stat-item">
+                <h3 class="stat-number" data-target="50000" data-suffix="+">50,000+</h3>
+                <p>Active Members</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <h3 class="stat-number" data-target="120" data-suffix="+">120+</h3>
+                <p>Elite Coaches</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <h3 class="stat-number" data-target="98" data-suffix="%">98%</h3>
+                <p>Success Rate</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <h3 class="stat-number" data-target="49" data-suffix="/5">4.9/5</h3>
+                <p>Member Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Live Metric Badge -->
+    <div class="floating-hero-card d-none d-lg-flex">
+      <div class="rounded-circle p-2" style="background: rgba(182, 255, 0, 0.2);">
+        <i class="bi bi-heart-pulse-fill text-neon fs-3"></i>
+      </div>
+      <div>
+        <div class="text-white fw-bold small">Today's Energy Burned</div>
+        <div class="text-neon fw-bold fs-5">1,248,000+ kcal</div>
+        <div class="text-muted small">Across Global FITZONE Community</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FEATURED WORKOUT PROGRAMS
+       ========================================================== */
+  -->
+  <section class="py-5" style="background-color: var(--color-black);">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <div class="sub-badge">
+          <span class="badge-neon"><i class="bi bi-trophy"></i> ELITE CURRICULUM</span>
+        </div>
+        <h2 class="section-title">FEATURED <span>WORKOUT PROGRAMS</span></h2>
+        <p class="section-desc mx-auto">
+          Choose from precision-tailored regimens created by certified exercise physiologists. Built to deliver sustainable muscle growth, functional mobility, and explosive fat burn.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card-fitzone d-flex flex-column justify-content-between">
+            <div>
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Full Body Foundation" loading="lazy">
+                <div class="card-badge-top"><span class="badge-neon">Beginner</span></div>
+                <div class="card-badge-right"><i class="bi bi-clock me-1"></i>4 Weeks</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge" style="background: rgba(182,255,0,0.1); color: var(--color-neon); border: 1px solid rgba(182,255,0,0.3);">Beginner Level</span>
+                <span class="text-muted small"><i class="bi bi-fire text-warning me-1"></i>320 kcal/day</span>
+              </div>
+              <h3 class="h5 text-white mb-2">Foundation: Beginner Full Body</h3>
+              <p class="text-muted small mb-3">
+                Master core compound movements, stimulate metabolism safely, and cement lifelong workout habits.
+              </p>
+            </div>
+            <div>
+              <a href="workouts.html" class="btn btn-outline-neon btn-sm w-100">
+                <i class="bi bi-arrow-right"></i> Explore Program
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card-fitzone d-flex flex-column justify-content-between">
+            <div>
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Iron Forge Strength" loading="lazy">
+                <div class="card-badge-top"><span class="badge-neon">Strength</span></div>
+                <div class="card-badge-right"><i class="bi bi-clock me-1"></i>8 Weeks</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge" style="background: rgba(56,189,248,0.1); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);">Intermediate</span>
+                <span class="text-muted small"><i class="bi bi-fire text-warning me-1"></i>480 kcal/day</span>
+              </div>
+              <h3 class="h5 text-white mb-2">Iron Forge: Strength &amp; Hypertrophy</h3>
+              <p class="text-muted small mb-3">
+                Progressive overload protocol focused on maximizing muscular hypertrophy and functional pulling and pushing power.
+              </p>
+            </div>
+            <div>
+              <a href="workouts.html" class="btn btn-outline-neon btn-sm w-100">
+                <i class="bi bi-arrow-right"></i> Explore Program
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card-fitzone d-flex flex-column justify-content-between">
+            <div>
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?auto=format&fit=crop&w=800&q=80" alt="Apex HIIT Cardio" loading="lazy">
+                <div class="card-badge-top"><span class="badge-neon">Cardio</span></div>
+                <div class="card-badge-right"><i class="bi bi-clock me-1"></i>6 Weeks</div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge" style="background: rgba(239,68,68,0.1); color: #ef4444; border: 1px solid rgba(239,68,68,0.3);">Advanced</span>
+                <span class="text-muted small"><i class="bi bi-fire text-warning me-1"></i>600 kcal/day</span>
+              </div>
+              <h3 class="h5 text-white mb-2">Apex HIIT: Ultimate Cardio Melt</h3>
+              <p class="text-muted small mb-3">
+                High-octane intervals to maximize VO2 max, ignite EPOC afterburn metabolic rate, and improve athletic endurance.
+              </p>
+            </div>
+            <div>
+              <a href="workouts.html" class="btn btn-outline-neon btn-sm w-100">
+                <i class="bi bi-arrow-right"></i> Explore Program
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="workouts.html" class="btn btn-neon">
+          <i class="bi bi-grid-fill"></i> View All 7 Categories &amp; Programs
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FITNESS & WELLNESS BENEFITS
+       ========================================================== -->
+  <section class="py-5" style="background: linear-gradient(180deg, #080808 0%, #111111 100%);">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <div class="sub-badge">
+          <span class="badge-neon"><i class="bi bi-stars"></i> HOLISTIC HEALTH</span>
+        </div>
+        <h2 class="section-title">THE 4 PILLARS OF <span>FITNESS BENEFITS</span></h2>
+        <p class="section-desc mx-auto">
+          Physical fitness touches every dimension of human life. Discover the scientifically proven transformations waiting for you.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Benefit 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-fitzone text-center">
+            <div class="badge-card-icon">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h4 class="h5 text-white mb-2">Physical Strength</h4>
+            <p class="small text-muted mb-0">
+              Increase bone mineral density, stimulate lean muscle protein synthesis, and perform daily tasks with ease and confidence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-fitzone text-center">
+            <div class="badge-card-icon">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <h4 class="h5 text-white mb-2">Cardiovascular Power</h4>
+            <p class="small text-muted mb-0">
+              Lower resting blood pressure, optimize lipid profiles, and protect arterial elasticity for enhanced longevity and stamina.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-fitzone text-center">
+            <div class="badge-card-icon">
+              <i class="bi bi-brain"></i>
+            </div>
+            <h4 class="h5 text-white mb-2">Mental Clarity &amp; Mood</h4>
+            <p class="small text-muted mb-0">
+              Release natural dopamine and endorphins, reduce stress biomarkers (cortisol), and achieve rejuvenating deep sleep cycles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-fitzone text-center">
+            <div class="badge-card-icon">
+              <i class="bi bi-universal-access"></i>
+            </div>
+            <h4 class="h5 text-white mb-2">Mobility &amp; Agility</h4>
+            <p class="small text-muted mb-0">
+              Restore joint synovial lubrication, reverse desk-bound postural slouch, and prevent age-related stiffness and injury.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       WHY CHOOSE FITZONE
+       ========================================================== -->
+  <section class="py-5" style="background-color: var(--color-black);">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="sub-badge">
+            <span class="badge-neon"><i class="bi bi-check2-all"></i> WHY CHOOSE FITZONE</span>
+          </div>
+          <h2 class="section-title text-start mb-3">ENGINEERED FOR <span>REAL RESULTS</span></h2>
+          <p class="text-muted mb-4">
+            At FITZONE, we eliminate guesswork. Our system synthesizes progressive biomechanics, balanced non-restrictive nutrition, and cutting-edge habit psychology so your healthy lifestyle becomes effortless and enduring.
+          </p>
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex gap-3 align-items-start">
+              <div class="rounded-circle p-2 mt-1" style="background: rgba(182, 255, 0, 0.15); color: var(--color-neon);">
+                <i class="bi bi-check-lg fs-5"></i>
+              </div>
+              <div>
+                <h5 class="text-white mb-1">Customized Progressive Roadmaps</h5>
+                <p class="text-muted small mb-0">No cookie-cutter workouts. Step-by-step progressions designed for your unique conditioning level.</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 align-items-start">
+              <div class="rounded-circle p-2 mt-1" style="background: rgba(182, 255, 0, 0.15); color: var(--color-neon);">
+                <i class="bi bi-shield-check fs-5"></i>
+              </div>
+              <div>
+                <h5 class="text-white mb-1">Safety-First Exercise Anatomy</h5>
+                <p class="text-muted small mb-0">Detailed cueing, joint alignment notes, and injury prevention guides on every movement.</p>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 align-items-start">
+              <div class="rounded-circle p-2 mt-1" style="background: rgba(182, 255, 0, 0.15); color: var(--color-neon);">
+                <i class="bi bi-graph-up-arrow fs-5"></i>
+              </div>
+              <div>
+                <h5 class="text-white mb-1">Data-Driven Habit &amp; Challenge Tracking</h5>
+                <p class="text-muted small mb-0">Interactive visual charts, milestone badges, and real-time habit gamification saved securely.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <a href="about.html" class="btn btn-neon">Learn About Our Mission</a>
+            <a href="contact.html" class="btn btn-outline-neon">Talk to a Coach</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <div class="rounded-4 overflow-hidden border" style="border-color: var(--color-border) !important;">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=80" alt="Gym Environment" class="w-100" style="height: 480px; object-fit: cover;">
+            </div>
+            <div class="p-4 rounded-4 position-absolute bottom-0 start-0 translate-middle-y ms-3 d-none d-sm-block" style="background: rgba(23, 23, 23, 0.95); backdrop-filter: blur(10px); border: 1px solid var(--color-neon); max-width: 280px; box-shadow: var(--shadow-md);">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-award-fill text-neon fs-2"></i>
+                <div>
+                  <div class="fw-bold text-white">#1 Fitness Hub</div>
+                  <div class="text-muted small">Awarded Premier Community 2026</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       INTERACTIVE BMI CALCULATOR WIDGET
+       ========================================================== -->
+  <section class="py-5" style="background: #111111;">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8">
+          <div class="card-fitzone p-4 p-md-5" style="background: #141414; border: 1px solid var(--color-neon);">
+            <div class="text-center mb-4">
+              <span class="badge-neon mb-2"><i class="bi bi-speedometer2"></i> QUICK HEALTH CHECK</span>
+              <h3 class="text-white fw-bold">CALCULATE YOUR BODY MASS INDEX (BMI)</h3>
+              <p class="text-muted small">Input your metrics to assess your baseline category and receive custom wellness recommendations.</p>
+            </div>
+
+            <form id="bmiCalculatorForm" class="form-fitzone">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="bmiWeight">Weight (in kg)</label>
+                  <input type="number" id="bmiWeight" class="form-control" placeholder="e.g. 70" required min="20" max="300" step="0.5">
+                </div>
+                <div class="col-md-6">
+                  <label for="bmiHeight">Height (in cm)</label>
+                  <input type="number" id="bmiHeight" class="form-control" placeholder="e.g. 175" required min="80" max="250" step="1">
+                </div>
+                <div class="col-12 text-center mt-3">
+                  <button type="submit" class="btn btn-neon px-5">
+                    <i class="bi bi-calculator"></i> Calculate BMI
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- BMI Result Box -->
+            <div id="bmiResultBox" class="mt-4 p-3 rounded-3 text-center d-none" style="background: #1c1c1c; border: 1px solid #333;">
+              <div class="small text-muted text-uppercase mb-1">Your Calculated BMI</div>
+              <div class="display-6 fw-bold text-white mb-1" id="bmiValue">--</div>
+              <div class="h5 fw-bold mb-2" id="bmiCategory">--</div>
+              <p class="small text-muted mb-0" id="bmiAdvice">--</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CUSTOMER TESTIMONIALS
+       ========================================================== -->
+  <section class="py-5" style="background-color: var(--color-black);">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <div class="sub-badge">
+          <span class="badge-neon"><i class="bi bi-chat-quote-fill"></i> MEMBER TRANSFORMATIONS</span>
+        </div>
+        <h2 class="section-title">REAL PEOPLE, <span>REAL RESULTS</span></h2>
+        <p class="section-desc mx-auto">
+          Hear from everyday professionals, parents, and athletes who transformed their energy and mindset with FITZONE.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi bi-quote quote-icon"></i>
+              <p class="text-light small mb-3">
+                "FITZONE completely altered my approach to exercise. I used to burn out doing extreme diets and unsustainable cardio. The structured programs and balanced nutrition guidelines helped me drop 14kg while feeling more energized than ever!"
+              </p>
+            </div>
+            <div class="user-profile">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Samantha Miller" class="user-avatar">
+              <div>
+                <h5 class="h6 text-white mb-0">Samantha Miller</h5>
+                <small class="text-neon">Product Designer &bull; 8 Months Member</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi bi-quote quote-icon"></i>
+              <p class="text-light small mb-3">
+                "As someone in my late 40s who suffered chronic lower back pain from long office desk hours, the mobility routines and strength fundamentals were life changing. I am now squatting and deadlifting pain-free!"
+              </p>
+            </div>
+            <div class="user-profile">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="user-avatar">
+              <div>
+                <h5 class="h6 text-white mb-0">David Sterling</h5>
+                <small class="text-neon">Software Architect &bull; 1 Year Member</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <i class="bi bi-quote quote-icon"></i>
+              <p class="text-light small mb-3">
+                "The interactive progress tracking and monthly fitness challenges keep me accountable every day. Unlocking achievement badges and seeing my weekly calorie burn chart is addictive. Highly recommend to everyone!"
+              </p>
+            </div>
+            <div class="user-profile">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Elena Rodriguez" class="user-avatar">
+              <div>
+                <h5 class="h6 text-white mb-0">Elena Rodriguez</h5>
+                <small class="text-neon">Marathon Runner &bull; 6 Months Member</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       NEWSLETTER CTA BANNER
+       ========================================================== -->
+  <section class="py-5" style="background: linear-gradient(135deg, #151a08 0%, #0d0d0d 100%); border-top: 1px solid rgba(182,255,0,0.2); border-bottom: 1px solid var(--color-border);">
+    <div class="container py-4 text-center">
+      <span class="badge-neon mb-2"><i class="bi bi-envelope-heart"></i> STAY INSPIRED</span>
+      <h2 class="text-white fw-bold mb-2">JOIN 50,000+ FITNESS ENTHUSIASTS</h2>
+      <p class="text-muted max-w-600 mx-auto mb-4" style="max-width: 550px;">
+        Receive weekly science-backed workout tips, wholesome recipes, and early access to community challenges delivered directly to your inbox.
+      </p>
+
+      <form id="newsletterForm" class="row justify-content-center g-2" style="max-width: 520px; margin: 0 auto;">
+        <div class="col-sm-8">
+          <input type="email" class="form-control py-3 px-4 rounded-pill bg-black text-white border-secondary" placeholder="Enter your email address" required>
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-neon py-3 w-100">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="fitzone-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <a class="navbar-brand" href="index.html">
+              <div class="brand-icon-wrapper">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <div class="brand-text">FIT<span>ZONE</span></div>
+            </a>
+          </div>
+          <p class="footer-desc">
+            Build Healthy Habits. Stay Active. Live Better. FITZONE is dedicated to empowering individuals across the globe with holistic fitness, smart nutrition, and vibrant community.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="workouts.html"><i class="bi bi-chevron-right"></i> Workouts</a></li>
+            <li><a href="exercises.html"><i class="bi bi-chevron-right"></i> Exercise Library</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Wellness</h4>
+          <ul class="footer-links">
+            <li><a href="nutrition.html"><i class="bi bi-chevron-right"></i> Nutrition</a></li>
+            <li><a href="progress.html"><i class="bi bi-chevron-right"></i> Progress Tracker</a></li>
+            <li><a href="challenges.html"><i class="bi bi-chevron-right"></i> Challenges</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">HQ Contact Info</h4>
+          <ul class="footer-links text-muted small" style="line-height: 2;">
+            <li><i class="bi bi-geo-alt-fill text-neon me-2"></i> 742 Fitness Boulevard, Metro Health District, NY 10001</li>
+            <li><i class="bi bi-telephone-fill text-neon me-2"></i> +1 (800) 555-FITZONE</li>
+            <li><i class="bi bi-envelope-fill text-neon me-2"></i> support@fitzone-wellness.com</li>
+            <li><i class="bi bi-clock-fill text-neon me-2"></i> Mon - Sun: 5:00 AM - 11:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 FITZONE – Body Fitness &amp; Wellness. All Rights Reserved. Engineered for Performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Shared JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
